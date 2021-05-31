@@ -27,9 +27,14 @@ Drawer buildDrawer(BuildContext context) {
             ),
           ),
           decoration: BoxDecoration(
-              color: Theme.of(context).accentColor
+              gradient: LinearGradient(begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    Theme.of(context).primaryColor.withOpacity(0.9),
+                    Theme.of(context).accentColor.withOpacity(0.9),],
+                  stops: [0.0, 1.0]),
+          )
           ),
-        ),
         drawerItems(title: 'My account', icon: FontAwesomeIcons.user,),
         drawerItems(title: 'Messages', icon: FontAwesomeIcons.envelope),
         drawerItems(title: 'Friends', icon: FontAwesomeIcons.userFriends),

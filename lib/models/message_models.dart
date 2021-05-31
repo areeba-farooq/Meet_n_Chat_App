@@ -62,7 +62,7 @@ final UserModel mickey = UserModel(
 );
 
 //Favourites:
-List<UserModel> favs = [olivia, smith, michael, mishal, sofia];
+List<UserModel> favs = [olivia, smith, michael, mishal, sofia, johny];
 
 //CHATS ON THE HOME SCREEN:
 List<MsgModel> chats = [
@@ -71,37 +71,44 @@ List<MsgModel> chats = [
       time: '2:30 PM',
       text: 'Hey, how\'s it going? What did you do today?',
       isLiked: false,
-      unRead: true),
+      unRead: true,
+  ),
   MsgModel(
       sender: smith,
       time: '3:55 PM',
       text: 'Hey, how\'s it going? What did you do today?',
       isLiked: false,
-      unRead: true),
+      unRead: true,
+  ),
   MsgModel(
       sender: michael,
       time: '4:30 PM',
       text: 'Hey, how\'s it going? What did you do today?',
       isLiked: false,
-      unRead: false),
+      unRead: false,
+  ),
   MsgModel(
       sender: mishal,
       time: '5:25 PM',
       text: 'Hey, how\'s it going? What did you do today?',
       isLiked: false,
-      unRead: true),
+      unRead: true,
+  ),
   MsgModel(
       sender: sofia,
       time: '6:12 PM',
       text: 'Hey, how\'s it going? What did you do today?',
       isLiked: false,
-      unRead: false),
+      unRead: false,
+  ),
   MsgModel(
       sender: mickey,
       time: '6:55 PM',
       text: 'Hey, how\'s it going? What did you do today?',
       isLiked: false,
-      unRead: false),
+      unRead: false,
+
+  ),
   MsgModel(
       sender: johny,
       time: '7:10 PM',

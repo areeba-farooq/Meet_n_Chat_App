@@ -36,3 +36,29 @@ const kEmailStyle = TextStyle(
     letterSpacing: 2.0
 );
 
+const kFavContactsStyle = TextStyle(
+    color: Colors.blueGrey,
+    fontSize: 17.0,
+    fontFamily: 'Acme',
+  letterSpacing: 1.0
+);
+
+const kTimeStyle = TextStyle(
+    color: Colors.grey,
+    fontSize: 15.0,
+    fontFamily: 'Acme'
+);
+
+const kMsgStyle = TextStyle(
+    color: Colors.black54,
+    fontFamily: 'Yanonekafeesatz',
+    fontSize: 12.0,
+    fontWeight: FontWeight.w600
+);
+
+const kNameStyle = TextStyle(
+  color: Colors.blueGrey,
+  fontFamily: 'Acme',
+  fontSize: 20.0,
+
+);
