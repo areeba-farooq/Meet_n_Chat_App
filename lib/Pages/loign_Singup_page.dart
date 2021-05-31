@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:meet_n_chat_app/Pages/home_page.dart';
 import 'package:meet_n_chat_app/RefactorWidgets/Radio_Buttons.dart';
 import 'package:meet_n_chat_app/methods/build_container.dart';
 import 'package:meet_n_chat_app/RefactorWidgets/constants.dart';
@@ -324,37 +325,42 @@ class _LoginPageState extends State<LoginPage> {
       right: 0.0,
       left: 0.0,
       child: Center(
-        child: Container(
-            height: 65.0,
-            width: 65.0,
-            padding: EdgeInsets.all(8.0),
-            decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(50.0),
-                boxShadow: [
-                  if(showShadow)
-                    BoxShadow(
-                        color: Colors.black.withOpacity(0.3),
-                        blurRadius: 8.0,
-                        spreadRadius: 2.0,
-                        offset: Offset(0, 1)
-                    ),]
-            ),
-            child: Container(
+        child: TextButton(
+          onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
+          },
+          child: Container(
+              height: 65.0,
+              width: 65.0,
+              padding: EdgeInsets.all(8.0),
               decoration: BoxDecoration(
-                gradient: LinearGradient(
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                    colors: [
-                      Theme.of(context).primaryColor.withOpacity(0.8),
-                      Theme.of(context).accentColor.withOpacity(0.8),],
-                    stops: [0.0, 1.0]
-                ),
-                borderRadius: BorderRadius.circular(30.0),
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(50.0),
+                  boxShadow: [
+                    if(showShadow)
+                      BoxShadow(
+                          color: Colors.black.withOpacity(0.3),
+                          blurRadius: 8.0,
+                          spreadRadius: 2.0,
+                          offset: Offset(0, 1)
+                      ),]
               ),
-              child: Icon(Icons.arrow_forward, color: Colors.white,),
+              child: Container(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      colors: [
+                        Theme.of(context).primaryColor.withOpacity(0.8),
+                        Theme.of(context).accentColor.withOpacity(0.8),],
+                      stops: [0.0, 1.0]
+                  ),
+                  borderRadius: BorderRadius.circular(30.0),
+                ),
+                child: Icon(Icons.arrow_forward, color: Colors.white,),
 
-            )
+              )
+          ),
         ),
       ),
     );

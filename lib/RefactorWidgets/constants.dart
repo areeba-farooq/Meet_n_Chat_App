@@ -22,3 +22,17 @@ const kText2 = TextStyle(
     color: Colors.orange,
     fontFamily: 'Acme');
 
+const kUserStyle = TextStyle(
+    color: Colors.black,
+    fontSize: 20.0,
+    fontFamily: 'Acme',
+    letterSpacing: 2.0
+);
+
+const kEmailStyle = TextStyle(
+    color: Colors.white70,
+    fontSize: 15.0,
+    fontFamily: 'Acme',
+    letterSpacing: 2.0
+);
+
