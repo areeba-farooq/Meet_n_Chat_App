@@ -25,38 +25,38 @@ final UserModel currentUser = UserModel(
 
 //Other Users:
 final UserModel mishal = UserModel(
-  id: 0,
+  id: 1,
   name: 'Mishal',
   avatar: 'images/girl1.jpg',
 );
 
 final UserModel johny = UserModel(
-  id: 0,
+  id: 2,
   name: 'Johny',
   avatar: 'images/boy1.jpg',
 );
 final UserModel smith = UserModel(
-  id: 0,
+  id: 3,
   name: 'Smith',
   avatar: 'images/boy2.jpg',
 );
 final UserModel olivia = UserModel(
-  id: 0,
+  id: 4,
   name: 'Olivia',
   avatar: 'images/girl2.jpg',
 );
 final UserModel michael = UserModel(
-  id: 0,
+  id: 5,
   name: 'Michael',
   avatar: 'images/boy3.jpg',
 );
 final UserModel sofia = UserModel(
-  id: 0,
+  id: 6,
   name: 'Sofia',
   avatar: 'images/girl3.jpg',
 );
 final UserModel mickey = UserModel(
-  id: 0,
+  id: 7,
   name: 'Mickey',
   avatar: 'images/boy4.jpg',
 );
@@ -154,5 +154,41 @@ List<MsgModel> messages = [
       time: '4:21 PM',
       text: 'I ate so much foo today.',
       isLiked: false,
+      unRead: true),
+  MsgModel(
+      sender: currentUser,
+      time: '4:25 PM',
+      text: 'Oh! go for a walk now.',
+      isLiked: false,
+      unRead: true),
+  MsgModel(
+      sender: johny,
+      time: '4:27 PM',
+      text: 'Yeah, Thanks. Are you coming with me on walk?',
+      isLiked: false,
+      unRead: true),
+  MsgModel(
+      sender: currentUser,
+      time: '4:28 PM',
+      text: 'Sure. just wait for a while',
+      isLiked: false,
+      unRead: true),
+  MsgModel(
+      sender: johny,
+      time: '4:30 PM',
+      text: 'Ok',
+      isLiked: false,
+      unRead: true),
+  MsgModel(
+      sender: johny,
+      time: '4:32 PM',
+      text: 'We will go for dinner too. OK?',
+      isLiked: true,
+      unRead: true),
+  MsgModel(
+      sender: currentUser,
+      time: '4:35 PM',
+      text: 'Cool',
+      isLiked: true,
       unRead: true),
 ];

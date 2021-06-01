@@ -62,3 +62,10 @@ const kNameStyle = TextStyle(
   fontSize: 20.0,
 
 );
+
+const kChatUserStyle = TextStyle(
+    color: Colors.black,
+    fontSize: 22.0,
+    fontFamily: 'Acme',
+    letterSpacing: 1.0
+);

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meet_n_chat_app/Pages/Chat_page.dart';
 import 'package:meet_n_chat_app/models/message_models.dart';
 import 'constants.dart';
 
@@ -31,17 +32,23 @@ class FavContacts extends StatelessWidget {
               scrollDirection: Axis.horizontal ,
               itemCount: favs.length,
                 itemBuilder: (context, i){
-                return Padding(
-                  padding: EdgeInsets.all(10.0),
-                  child: Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 35.0,
-                        backgroundImage: AssetImage(favs[i].avatar),
-                      ),
-                      SizedBox(height: 6.0,),
-                      Text(favs[i].name, style: kFavContactsStyle,),
-                    ],
+                return GestureDetector(
+                  onTap: () => Navigator.push(context,
+                    MaterialPageRoute(builder: (context)=> ChatScreen(
+                      user: favs[i],),
+                    ),),
+                  child: Padding(
+                    padding: EdgeInsets.all(10.0),
+                    child: Column(
+                      children: [
+                        CircleAvatar(
+                          radius: 35.0,
+                          backgroundImage: AssetImage(favs[i].avatar),
+                        ),
+                        SizedBox(height: 6.0,),
+                        Text(favs[i].name, style: kFavContactsStyle,),
+                      ],
+                    ),
                   ),
                 );
                 }),
