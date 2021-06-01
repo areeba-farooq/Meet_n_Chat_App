@@ -1,3 +1,3 @@
 # Meet_n_Chat_App
 
-![meetnChat](https://user-images.githubusercontent.com/41040479/120242347-84a04900-c219-11eb-8c0f-344519db52f5.png)
+![meetnChat](https://user-images.githubusercontent.com/41040479/120355881-8f5deb00-c2b8-11eb-8a5c-b0bb3af5feb3.png)
